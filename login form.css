@@ -1,0 +1,21 @@
+body{
+    background-color:gray;
+}
+.border{
+    width:250px;
+    height:350px;
+    padding:20px;
+    border:10px solid cyan;
+    outline-style: solid;
+    outline-color:blue;
+    inline-color:blue;
+}
+.form{
+    border-color:cyan;
+    outline-style: solid;
+    outline-color: blue;
+}
+button{
+    background-color:gray;
+    border-color:blue;
+}
