@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="login form.css">
+    <title>Login form</title>
+    <script src="login form.js"></script>
+</head>
+<body>
+    <center>
+        <form>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div class="border">
+                <font style="arial" font color="black">
+                    <h1>LOGIN FORM</h1>
+                </font>
+                <div align="center" height="1500" width="400">
+                    <h3>Enter your username</h3>
+                    <input type="text" name="username" style="border-color:blue" required />
+                    <h3>Enter your password</h3>
+                    <input type="password" name="password" style="border-color:blue" required />
+                    <br></br>
+                    <br></br>
+                    <div class="button">
+                        <input type="button" onclick="clickevent()" value="LOGIN">
+                        <script>
+                            function clickevent() {
+                                window.alert("Login successful");
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </center>
+</body>
+</html>
