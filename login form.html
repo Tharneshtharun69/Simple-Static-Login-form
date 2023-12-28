@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" href="login_form.css">
     <title>Login form</title>
     <script src="login_form.js"></script>
 </head>
-
 <body>
     <center>
         <form>
@@ -19,16 +17,23 @@
                 </font>
                 <div align="center" height="1500" width="400">
                     <h3>Enter your username</h3>
-                    <input type="text" style="border-color:blue" required/>
+                    <input id="username" type="text" style="border-color:blue" required/>
                     <h3>Enter your password</h3>
-                    <input type="password" style="border-color:blue" required/>
+                    <input id="password" type="password" style="border-color:blue" required/>
                     <br></br>
                     <br></br>
                     <div class="button">
                         <input type="button" onclick="clickevent()" value="LOGIN">
                         <script>
                             function clickevent() {
-                                window.alert("Login successful");
+                                var username = document.getElementById('username').value;
+                                var password = document.getElementById('password').value;
+
+                                if (username === '' || password === '') {
+                                    window.alert("Please fill in both username and password.");
+                                } else {
+                                    window.alert("Login successful");
+                                }
                             }
                         </script>
                     </div>
